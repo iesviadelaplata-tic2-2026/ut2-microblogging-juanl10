@@ -1,16 +1,13 @@
+
 /* ==========================================================================
-   ESTILOS DE LA BITÁCORA — Plantilla de la UT2 (Microblogging)
+   ESTILOS DE LA BITÁCORA — MOTOCROSS Y MOTOS DEPORTIVAS
 
-   Solo usa propiedades que ya conoces de la UT1. Para personalizar tu
-   bitácora, empieza por los colores. Estos son los de la plantilla:
-
-     #1e293b  azul muy oscuro  → fondo de la cabecera y del pie
-     #478ac9  azul             → enlaces y etiquetas (#)
-     #db545a  coral            → tipo de post (Texto, Foto, Cita...)
-     #f2f5f8  gris muy claro   → fondo de la página
-     #6b7280  gris             → textos secundarios (fecha, alias, pie de foto)
-
-   Busca cada código con Ctrl+F y cámbialo por el color que quieras.
+   Colores elegidos:
+     #171717  negro          → cabecera y pie
+     #ff5a00  naranja        → enlaces y etiquetas
+     #d62828  rojo           → tipos de post
+     #f2f2f2  gris claro     → fondo de la página
+     #666666  gris           → textos secundarios
    ========================================================================== */
 
 
@@ -26,13 +23,13 @@
 body {
   font-family: "Segoe UI", Verdana, Arial, sans-serif;
   font-size: 16px;
-  color: #111827;
-  background-color: #f2f5f8;
+  color: #222222;
+  background-color: #f2f2f2;
 }
 
 a:link,
 a:visited {
-  color: #478ac9;
+  color: #ff5a00;
   text-decoration: none;
 }
 
@@ -47,15 +44,16 @@ a:active {
    ========================================================================== */
 
 .cabecera {
-  background-color: #1e293b;
+  background-color: #171717;
   color: #ffffff;
   text-align: center;
   padding: 60px 20px;
+  border-bottom: 5px solid #ff5a00;
 }
 
 .cabecera .lema {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #d62828;
   padding: 4px 14px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -65,10 +63,11 @@ a:active {
   font-size: 2.6rem;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: #ff5a00;
 }
 
 .cabecera p {
-  color: #cbd5e1;
+  color: #cccccc;
   font-size: 1.1rem;
 }
 
@@ -80,9 +79,7 @@ a:active {
 .timeline {
   width: 90%;
   margin: 40px auto;
-  /* En pantallas grandes, la columna queda muy ancha. Si quieres limitarla,
-     quita el comentario de la línea siguiente (max-width es una propiedad nueva):
-  max-width: 680px; */
+  max-width: 680px;
 }
 
 
@@ -92,32 +89,33 @@ a:active {
 
 .post {
   background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-bottom: 4px solid #e5e7eb;
+  border: 1px solid #dddddd;
+  border-bottom: 4px solid #ff5a00;
   padding: 24px;
   margin-bottom: 30px;
 }
 
-/* Al pasar el ratón, la línea inferior se pinta del color de los enlaces */
+/* Al pasar el ratón, la línea inferior cambia a rojo */
 .post:hover {
-  border-bottom-color: #478ac9;
+  border-bottom-color: #d62828;
 }
 
 /* Autor del post */
 .post-cabecera h2 {
   font-size: 1.1rem;
+  color: #d62828;
 }
 
 /* Alias, fecha y tipo de post */
 .meta {
-  color: #6b7280;
+  color: #666666;
   font-size: 0.85rem;
   margin-bottom: 16px;
 }
 
-/* Tipo de post: Texto, Foto, Cita, Enlace, Diálogo, Vídeo, Música */
+/* Tipo de post */
 .tipo {
-  background-color: #db545a;
+  background-color: #d62828;
   color: #ffffff;
   font-size: 0.7rem;
   font-weight: bold;
@@ -130,7 +128,7 @@ a:active {
   margin-bottom: 12px;
 }
 
-/* Etiquetas (#) */
+/* Etiquetas */
 .etiqueta {
   font-weight: bold;
 }
@@ -140,7 +138,7 @@ a:active {
    5. MULTIMEDIA
    ========================================================================== */
 
-/* Foto con su pie (autor y licencia) */
+/* Foto con su pie */
 .post-imagen {
   position: relative;
   margin-bottom: 16px;
@@ -159,7 +157,7 @@ a:active {
 }
 
 .post-imagen figcaption {
-  color: #6b7280;
+  color: #666666;
   font-size: 0.8rem;
   font-style: italic;
   margin-top: 6px;
@@ -184,12 +182,12 @@ a:active {
    ========================================================================== */
 
 .post blockquote {
-  border-left: 4px solid #db545a;
+  border-left: 4px solid #d62828;
   padding: 10px 20px;
   margin-bottom: 12px;
   font-size: 1.15rem;
   font-style: italic;
-  background-color: #f9fafb;
+  background-color: #fff3ed;
 }
 
 .post blockquote p {
@@ -198,20 +196,20 @@ a:active {
 
 /* Autor de la cita */
 .post blockquote footer {
-  color: #6b7280;
+  color: #666666;
   font-size: 0.9rem;
   font-style: normal;
 }
 
-/* Diálogo: cada intervención en un párrafo; el nombre, en <strong> */
+/* Diálogo */
 .dialogo p {
   padding-left: 12px;
-  border-left: 2px solid #e5e7eb;
+  border-left: 2px solid #ff5a00;
   margin-bottom: 8px;
 }
 
 .dialogo strong {
-  color: #478ac9;
+  color: #d62828;
 }
 
 
@@ -220,10 +218,10 @@ a:active {
    ========================================================================== */
 
 .post-pie {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #dddddd;
   padding-top: 12px;
   margin-top: 4px;
-  color: #6b7280;
+  color: #666666;
   font-size: 0.9rem;
 }
 
@@ -237,14 +235,15 @@ a:active {
    ========================================================================== */
 
 .pie {
-  background-color: #1e293b;
-  color: #cbd5e1;
+  background-color: #171717;
+  color: #cccccc;
   text-align: center;
   font-size: 0.85rem;
   padding: 30px 20px;
+  border-top: 4px solid #ff5a00;
 }
 
 .pie a:link,
 .pie a:visited {
-  color: #ffffff;
+  color: #ff5a00;
 }

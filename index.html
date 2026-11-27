@@ -1,71 +1,263 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi bitácora</title>
+  <title>Motocross y motos deportivas</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <!-- CABECERA: cambia el lema, el título y la descripción -->
+  <!-- CABECERA -->
   <header class="cabecera">
-    <span class="lema">Bitácora de TIC II</span>
-    <h1>Las motos</h1>
-    <p>Tipos de moto y uso de cada una</p>
+    <span class="lema">Mi pasión por las motos 🏁</span>
+    <h1>Motocross y motos deportivas</h1>
+    <p>Un espacio dedicado al mundo de las motos, las carreras, la velocidad y la adrenalina.</p>
   </header>
 
-  <!-- TIMELINE: cada post es un <article class="post">. El más reciente, arriba -->
   <main class="timeline">
 
-    <!-- POST DE FOTO -->
+    <!-- 1. POST DE TEXTO -->
     <article class="post">
       <header class="post-cabecera">
-        <h2>Nombre visible</h2>
+        <h2>Juan Luis</h2>
         <p class="meta">
-          @tu_alias · <time datetime="2026-11-26">26 nov.</time>
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Texto</span>
         </p>
       </header>
-      <figure class="post-imagen">
-        <img src="img/yz.jpg" alt="Yamaha YZ250 2t">
-        <span class="tipo">Foto</span>
-        <figcaption>Imagen: «Ejemplo», de la plantilla de TIC II (sustitúyela por la tuya, con su autor y su licencia).</figcaption>
-      </figure>
-      <p>Aquí va el texto del post. Una idea por post y lo importante al principio. <a class="etiqueta" href="#">#MiEtiqueta</a></p>
+      <p>¡Bienvenidos a mi bitácora! Aquí compartiré mi pasión por el motocross y las motos deportivas, dos mundos llenos de velocidad y emoción.
+        <a class="etiqueta" href="#">#Motocross</a>
+        <a class="etiqueta" href="#">#MotosDeportivas</a>
+      </p>
       <footer class="post-pie">
         <p>💬 0 · 🔁 0 · ❤️ 0</p>
       </footer>
     </article>
 
-    <!-- POST DE CITA -->
+    <!-- 2. POST DE FOTO PROPIA -->
     <article class="post">
       <header class="post-cabecera">
-        <h2>Nombre visible</h2>
+        <h2>Juan Luis</h2>
         <p class="meta">
-          @tu_alias · <time datetime="2026-11-26">26 nov.</time>
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+        </p>
+      </header>
+      <figure class="post-imagen">
+        <img src="img/yz.jpg" alt="Motocicleta de motocross Yamaha YZ en un circuito de tierra">
+        <span class="tipo">Foto</span>
+        <figcaption>Fotografía propia de una moto de motocross.</figcaption>
+      </figure>
+      <p>Las motos de motocross están preparadas para superar saltos, curvas y terrenos difíciles.
+        <a class="etiqueta" href="#">#Motocross</a>
+        <a class="etiqueta" href="#">#Yamaha</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 3. POST DE CITA -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
           <span class="tipo">Cita</span>
         </p>
       </header>
       <blockquote>
-        <p>«Escribe aquí la frase que quieras citar».</p>
-        <footer>— Autor de la cita, <cite>obra de la que procede</cite></footer>
+        <p>«El éxito es la suma de pequeños esfuerzos repetidos día tras día».</p>
+        <footer>— Robert Collier</footer>
       </blockquote>
-      <p>Por qué te gusta esta frase. <a class="etiqueta" href="#">#MiEtiqueta</a></p>
+      <p>En el motocross, entrenar y mejorar cada día es fundamental.
+        <a class="etiqueta" href="#">#Motivación</a>
+        <a class="etiqueta" href="#">#Motocross</a>
+      </p>
       <footer class="post-pie">
         <p>💬 0 · 🔁 0 · ❤️ 0</p>
       </footer>
     </article>
 
-    <!-- POST DE TEXTO -->
+    <!-- 4. POST DE ENLACE -->
     <article class="post">
       <header class="post-cabecera">
-        <h2>Nombre visible</h2>
+        <h2>Juan Luis</h2>
         <p class="meta">
-          @tu_alias · <time datetime="2026-11-26">26 nov.</time>
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Enlace</span>
+        </p>
+      </header>
+      <p>Si te gustan las motos deportivas, visita la web oficial de Yamaha para descubrir sus modelos y características.
+        <a href="https://www.yamaha-motor.eu/es/es/" target="_blank" rel="noopener noreferrer">Visitar la web oficial de Yamaha</a>
+        <a class="etiqueta" href="#">#Yamaha</a>
+        <a class="etiqueta" href="#">#Motos</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 5. POST DE DIÁLOGO -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Diálogo</span>
+        </p>
+      </header>
+      <p>
+        — ¿Qué prefieres, motocross o motos deportivas?<br>
+        — ¡Las dos! El motocross por sus saltos y las deportivas por su diseño y velocidad.
+        <a class="etiqueta" href="#">#Motocross</a>
+        <a class="etiqueta" href="#">#Deportivas</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 6. POST DE VÍDEO -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Vídeo</span>
+        </p>
+      </header>
+      <p>Los saltos y las curvas hacen del motocross un deporte espectacular. ¡Mira este vídeo!</p>
+      <iframe
+        width="100%"
+        height="315"
+        src="https://youtu.be/6uAE83iYDhs?si=SddsYlXtUDMINULH"
+        title="Vídeo de motocross"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <figcaption>
+          Título: [Motocross].
+          Autor: [Jaime Soler Movies].
+          Sitio: https://youtube.com/.
+          Licencia: [Youtube].
+          <a href="[https://youtu.be/6uAE83iYDhs?si=SddsYlXtUDMINULH]" target="_blank" rel="noopener noreferrer">Ver imagen original</a>.
+        </figcaption>
+      <p>
+        <a class="etiqueta" href="#">#Motocross</a>
+        <a class="etiqueta" href="#">#Carreras</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 7. POST DE MÚSICA -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Música</span>
+        </p>
+      </header>
+      <p>Una buena canción para acompañar la pasión por las motos y la velocidad. 🎸</p>
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/SPOTIFY_ID"
+        width="100%"
+        height="152"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+      <p>
+        <a class="etiqueta" href="#">#Música</a>
+        <a class="etiqueta" href="#">#Motor</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 8. FOTO CON LICENCIA -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+        </p>
+      </header>
+      <figure class="post-imagen">
+        <img src="img/r1.jpg" alt="Motocicleta deportiva en una fotografía">
+        <span class="tipo">Foto</span>
+        <figcaption>
+          Título: [Yamaha R1].
+          Autor: [Sebastian Bautista].
+          Sitio: https://www.pexels.com/.
+          Licencia: [Licencia pexels].
+          <a href="[https://www.pexels.com/es-es/foto/noche-vehiculo-lujo-neumatico-19828715/]" target="_blank" rel="noopener noreferrer">Ver imagen original</a>.
+        </figcaption>
+      </figure>
+      <p>Las motos deportivas destacan por su diseño aerodinámico y sus prestaciones.
+        <a class="etiqueta" href="#">#MotosDeportivas</a>
+        <a class="etiqueta" href="#">#Motor</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 9. HILO 1/3 -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
           <span class="tipo">Texto</span>
         </p>
       </header>
-      <p>¡Bienvenidos a mi bitácora! Aquí iré publicando cosas sobre… <a class="etiqueta" href="#">#Presentación</a></p>
+      <p>🧵 Hilo 1/3: ¿Qué diferencia hay entre una moto de motocross y una deportiva? Las de motocross están diseñadas para circuitos de tierra y saltos.
+        <a class="etiqueta" href="#">#Motocross</a>
+        <a class="etiqueta" href="#">#Motos</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 10. HILO 2/3 -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Texto</span>
+        </p>
+      </header>
+      <p>Hilo 2/3: Las motos deportivas están pensadas para carretera y circuito asfaltado. Destacan por su posición de conducción y su diseño aerodinámico.
+        <a class="etiqueta" href="#">#Deportivas</a>
+        <a class="etiqueta" href="#">#Motor</a>
+      </p>
+      <footer class="post-pie">
+        <p>💬 0 · 🔁 0 · ❤️ 0</p>
+      </footer>
+    </article>
+
+    <!-- 11. HILO 3/3 -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2>Juan Luis</h2>
+        <p class="meta">
+          @juanluis · <time datetime="2026-11-27">27 nov.</time>
+          <span class="tipo">Texto</span>
+        </p>
+      </header>
+      <p>Hilo 3/3: Aunque son diferentes, ambas necesitan práctica, responsabilidad y protección. ¡Lo importante es disfrutar del mundo del motor con seguridad!
+        <a class="etiqueta" href="#">#Seguridad</a>
+        <a class="etiqueta" href="#">#Motos</a>
+      </p>
       <footer class="post-pie">
         <p>💬 0 · 🔁 0 · ❤️ 0</p>
       </footer>
